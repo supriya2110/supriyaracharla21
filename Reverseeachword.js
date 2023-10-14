@@ -1,6 +1,11 @@
+const str = 'This is a sunny day';
+const reverseSentence = str => {
+   const arr = str.split(" ");
+   const reversed = arr.map(el => {
+      return el.split('').reverse().join("");
+   });
+   return reversed.join(" ");
+};
+console.log(reverseSentence(str));
 
-
-        let str="srividhya supriya";
-        let str1=str.split(" ").reverse().join(" ");
-        let str2=str1.split(" ").reverse().join(" ");
-        console.log(str2);
+        
